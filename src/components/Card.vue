@@ -1,4 +1,5 @@
 <template>
+    <div class="card-div">
         <div class="box">
             <div class="imgBx">
                 <slot name="img"></slot>
@@ -7,13 +8,33 @@
                 <slot name="content"></slot>
             </div>
         </div>
+        <!-- <div class="box">
+            <div class="imgBx">
+                <slot name="img"></slot>
+            </div>
+            <div class="content">
+                <slot name="content"></slot>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <slot name="img"></slot>
+            </div>
+            <div class="content">
+                <slot name="content"></slot>
+            </div>
+        </div> -->
+
+
+    </div>
+
 </template>
 <script>
 export default {
     name: "CardComp"
 }
 </script>
-<style scope>
+<style scoped>
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
 * {
@@ -23,13 +44,14 @@ export default {
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+.card-div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     min-height: 100vh;
-    background: #010615;
+    /* background: #010615; */
+    /* background: #fff; */
 }
 
 .box {
