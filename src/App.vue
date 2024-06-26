@@ -2,6 +2,7 @@
   <div class="wrapper">
     <NavBar/>
     <main class="container-fluid">
+      <Card/>
       <router-view/>
     </main>
     <Footer/>
@@ -12,11 +13,13 @@
 <script>
 import NavBar from '@/components/NavBar.vue'
 import Footer from '@/components/Footer.vue'
+import Card from '@/components/Card.vue'
 
 export default {
     components: {
       NavBar,
-      Footer
+      Footer,
+      Card
  }
 }
 </script>
