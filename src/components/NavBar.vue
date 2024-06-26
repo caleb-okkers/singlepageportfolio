@@ -1,5 +1,5 @@
 <template lang="">
-    <nav class="navbar navbar-dark fixed-top">
+    <nav class="navbar navbar-dark sticky-top">
                         <div class="container-fluid">
                           <a class="navbar-brand hometext" href="#">CO</a>
                           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">

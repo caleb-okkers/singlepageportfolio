@@ -1,3 +1,7 @@
+/* universal selector */
+::-webkit-scrollbar {
+    display: none;
+}
 
 /* Select all images */
 img {
@@ -52,10 +56,6 @@ nav a.router-link-exact-active {
 
 
 .navbar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     background-color: black !important;
 }
 
@@ -63,8 +63,11 @@ nav a.router-link-exact-active {
     background-color: black !important;
 }
 
-footer {
-    bottom: 0 !important;
-    position: absolute;
-}
 
+
+/* wrapper */
+
+:is(.wrapper) {
+    display: grid;
+    grid-template-rows: auto minmax(100dvh, 100%) auto;
+}

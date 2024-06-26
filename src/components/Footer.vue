@@ -1,22 +1,17 @@
 <template>
-    <div>
-        <footer class="container-fluid">
-            <div class="row">
-                <p class="lead">Caleb Okkers &copy; <span class="shadow">{{ cYear }}</span></p>
-            </div>
-        </footer>
-    </div>
+    <footer class="container-fluid">
+        <div class="row">
+            <p class="lead">Caleb Okkers &copy; <span class="shadow">{{ cYear }}</span></p>
+        </div>
+    </footer>
 </template>
 <script>
 export default {
     name: "FooterComp",
     data() {
         return {
-            cYear: ''
+            cYear: new Date().getUTCFullYear()
         }
-    },
-    mounted () {
-        this.cYear = new Date().getUTCFullYear();
     }
 }
 </script>
