@@ -19,7 +19,7 @@ img[alt='logo'] {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    color:  rgb(29, 29, 29) ;
   }
 
 .nav {
@@ -28,7 +28,7 @@ img[alt='logo'] {
 
 nav a {
     font-weight: bold;
-    color: #2c3e50;
+    color: rgb(29, 29, 29);
 }
 
 nav a.router-link-exact-active {
@@ -61,5 +61,10 @@ nav a.router-link-exact-active {
 
 .nav {
     background-color: black !important;
+}
+
+footer {
+    bottom: 0 !important;
+    position: absolute;
 }
 
