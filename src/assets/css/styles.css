@@ -1,0 +1,70 @@
+
+/* Select all images */
+img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* logo */
+img[alt='logo'] {
+    width: 5rem;
+}
+
+/* from appview */
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color:  rgb(29, 29, 29) ;
+  }
+
+.nav {
+    padding: 30px;
+}
+
+nav a {
+    font-weight: bold;
+    color: rgb(29, 29, 29);
+}
+
+nav a.router-link-exact-active {
+    color: #42b983
+}
+  
+/* .offcanvas-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-inline {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} */
+
+.navlinks {
+    text-decoration: none !important;
+}
+
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: black !important;
+}
+
+.nav {
+    background-color: black !important;
+}
+
+footer {
+    bottom: 0 !important;
+    position: absolute;
+}
+
