@@ -15,6 +15,9 @@ export default createStore({
   getters: {
   },
   mutations: {
+    setJobTitle(state, payload) {
+      state.jobTitle = payload
+    },
     setAboutMe(state, payload) {
       state.aboutMe = payload
     },
@@ -35,6 +38,19 @@ export default createStore({
     }
   },
   actions: {
+    async getJobTitle(context){
+      try {
+        let {jobTitle} = await (await axios.get(portfolioURL)).results
+        context.commit('setJobTitle', jobTitle)
+      }catch(e) {
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch data",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
     async getAboutMe(context){
       try {
         let {aboutMe} = await (await axios.get(portfolioURL)).results
