@@ -5,20 +5,20 @@
                 <div class="info">
                     <slot name="name"></slot>
                     <slot name="text"></slot>
-                    <Card/>
+                    <!-- <Card/> -->
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
-import Card from '@/components/Card.vue'
+// import Card from '@/components/Card.vue'
 
 export default {
     name: "AboutSection",
 
     components: {
-        Card
+        // Card
     },
 
     mounted() {

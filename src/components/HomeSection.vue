@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row vh-100">
+    <div class="row vh-100 d-md-flex d-block align-items-center">
       <div class="col d-flex justify-content-center align-items-center">
         <img
           src="https://github.com/caleb-okkers/coolCards/blob/master/images/IMG_2711onetooneratio.jpg?raw=true"

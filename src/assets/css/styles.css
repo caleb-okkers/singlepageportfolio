@@ -77,3 +77,16 @@ nav a.router-link-exact-active {
 /* footer {
     color: #fff;
 } */
+
+/* section */
+
+
+
+/* media query */
+
+@media (width < 800px) {
+    #home .row {
+        display: block;
+        height: auto;
+    }
+}
