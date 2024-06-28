@@ -70,7 +70,7 @@ export default createStore({
     },
     async getEducation(context){
       try {
-        let {education} = await (await axios.get(portfolioURL)).results
+        let {education} = (await axios.get(portfolioURL)).data
         context.commit('setEducation', education)
       }catch(e) {
         Swal.fire({
@@ -83,7 +83,7 @@ export default createStore({
     },
     async getWork(context){
       try {
-        let {work} = await (await axios.get(portfolioURL)).results
+        let {work} = await (await axios.get(portfolioURL)).data
         context.commit('setWork', work)
       }catch(e) {
         Swal.fire({
@@ -96,7 +96,7 @@ export default createStore({
     },
     async getSkills(context){
       try {
-        let {skills} = await (await axios.get(portfolioURL)).results
+        let {skills} = await (await axios.get(portfolioURL)).data
         context.commit('setSkills', skills )
       }catch(e) {
         Swal.fire({
@@ -109,7 +109,7 @@ export default createStore({
     },
     async getProjects(context){
       try {
-        let {projects} = await (await axios.get(portfolioURL)).results
+        let {projects} = await (await axios.get(portfolioURL)).data
         context.commit('setProjects', projects)
       }catch(e) {
         Swal.fire({
@@ -122,7 +122,7 @@ export default createStore({
     },
     async getTestimonials(context){
       try {
-        let {testimonials} = await (await axios.get(portfolioURL)).results
+        let {testimonials} = await (await axios.get(portfolioURL)).data
         context.commit('setTestimonials', testimonials)
       }catch(e) {
         Swal.fire({

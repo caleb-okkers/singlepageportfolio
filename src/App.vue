@@ -1,38 +1,46 @@
+<!-- <template>
+  <div class="wrapper">
+    <main class="container-fluid">
+      
+      
+
+      
+    </main>
+  </div>
+  
+</template> -->
+
 <template>
   <div class="wrapper">
     <NavBar/>
     <main class="container-fluid">
+    <section id="home">
       <HomeSection/>
-        <AboutSection v-for="hehe in about" :key="hehe.name">
+    </section>
+    <section id="about">
+      <div class="container">
+
+        <AboutSection v-for="info in about" :key="info.name">
           <template #name>
-            <h2>{{ hehe.name }}</h2>
+            <h2>{{ info.name }}</h2>
           </template>
           <template #text>
-           <p>{{ hehe.text }}</p>
+           <p>{{ info.text }}</p>
           </template>
         </AboutSection>
-<!-- 
-      <AboutSection >
-          <template #about>
-            <h2>{{ about.name }}</h2>
-          </template>
-          <template #about-text>
-            <p>{{ about.text }}</p>
-          </template>
-          <template #objective>
-            <h2>{{ objective.name }}</h2>
-          </template>
-          <template>
-            <p>{{ objective.text }}</p>
-          </template>
-      </AboutSection> -->
-
+      </div>
+    </section>
+    <section id="resume"></section>
+    <section id="projects">
       <Card/>
-      <router-view/>
-    </main>
-    <Footer/>
-  </div>
+    </section>
+    <section id="testimonials"></section>
+    <section id="contact"></section>
 
+    <!-- <router-view/> -->
+    </main>
+  </div>
+  <Footer/>
 </template>
 
 <script>
@@ -58,7 +66,7 @@ export default {
  },
  mounted(){
   this.$store.dispatch('getAboutMe')
-  console.log('hehe');
+  console.log('info');
  }
 }
 </script>
