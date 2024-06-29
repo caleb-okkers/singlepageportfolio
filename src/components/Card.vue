@@ -49,7 +49,8 @@ export default {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 100vh;
+    padding: 2rem;
+    /*min-height: 100vh; */
     /* background: #010615; */
     /* background: #fff; */
 }
@@ -62,7 +63,7 @@ export default {
     justify-content: center;
     align-items: center;
     margin: 40px;
-    background: #060c21;
+    background: #000;
     transition: 0.5s;
 }
 
@@ -117,7 +118,7 @@ export default {
 
 }
 
-.box::before,
+/*.box::before,
 .box::after {
     background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
 }
@@ -130,6 +131,11 @@ export default {
 .box:nth-child(3):before,
 .box:nth-child(3):after {
     background: linear-gradient(235deg, #772aff, #010615, #2196F3);
+}*/
+
+.box::before,
+.box::after {
+    background: linear-gradient(235deg, #B8860B, #010615, #B8860B);
 }
 
 .box .content {
